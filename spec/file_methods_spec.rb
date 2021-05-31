@@ -9,7 +9,7 @@ describe FileMethods do
   let(:dst_rb_file) { 'tmp/test2.rb' }
   before do
     FileUtils.rm_rf('tmp')
-    FileUtils.mkdir 'tmp' unless File.exists?('tmp')
+    FileUtils.mkdir 'tmp' unless File.exist?('tmp')
   end
 
   describe '#read:' do
