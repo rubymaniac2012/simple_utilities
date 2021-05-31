@@ -8,7 +8,7 @@ describe FileMethods do
   let(:dst_file) { 'tmp/test2.txt' }
   let(:dst_rb_file) { 'tmp/test2.rb' }
   before do
-    FileUtils.rm_rf('tmp/*')
+    FileUtils.rm_rf('tmp')
     FileUtils.mkdir 'tmp' unless File.exists?('tmp')
   end
 
