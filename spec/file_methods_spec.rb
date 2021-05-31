@@ -2,7 +2,6 @@
 
 require 'simple_utilities/exceptions/file_methods_exception'
 require 'simple_utilities/file_methods'
-require 'fileutils'
 describe FileMethods do
   let(:src_file) { 'tmp/test.txt' }
   let(:dst_file) { 'tmp/test2.txt' }

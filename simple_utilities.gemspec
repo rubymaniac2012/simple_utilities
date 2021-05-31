@@ -7,9 +7,12 @@ Gem::Specification.new do |s|
   s.description = 'A simple utility gem'
   s.authors     = ['Shams Baig']
   s.email       = 'baig.shams@gmail.com'
-  s.files       = ['README.md', 'lib/simple_utilities.rb']
+  s.files       = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(%r{^(test|spec|features)/})
+  end
   s.add_dependency 'activesupport', '6.1.3.2'
-  s.homepage    =
+  s.require_paths = ['lib']
+  s.homepage =
     'https://github.com/rubymaniac2012'
   s.license = 'SB'
 
