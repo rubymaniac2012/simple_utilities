@@ -7,7 +7,7 @@ require 'active_support/core_ext/hash/indifferent_access'
 #        hash = {a: 'a', b: 'b', c: 'c'}.with_indifferent_access
 #        hash[:a] == hash['a']
 # deep_keys:
-#         hash = {a: b: {c: '123'}}
+#         hash = {a: 1, b: {c: '123'}}
 #         hash.deep_keys = %i[a b c]
 class Hash
   def deep_transform_values(&block)
